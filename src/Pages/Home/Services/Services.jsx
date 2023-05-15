@@ -5,14 +5,14 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://car-doctor-server-tawny-seven.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
   return (
     <div className="my-5">
       <div className="text-center">
-        <h1 className="text-2xl text-red-600">Service</h1>
+        <h1 className="font-bold text-orange-600">Service</h1>
         <h1 className="text-5xl font-bold">Our Service Area</h1>
         <p>
           the majority have suffered alteration in some form, by injected

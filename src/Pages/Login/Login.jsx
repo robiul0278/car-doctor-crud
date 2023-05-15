@@ -27,7 +27,7 @@ const Login = () => {
         }
         console.log(loggedUser);
 
-        fetch("http://localhost:5000/jwt", {
+        fetch("https://car-doctor-server-tawny-seven.vercel.app/jwt", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -38,7 +38,7 @@ const Login = () => {
           .then((data) => {
           console.log("jwt response", data);
           localStorage.setItem("car-access-token", data.token);
-          // navigate(from, { replace: true });
+          navigate(from, { replace: true });
         });
       })
       .catch((error) => console.log(error));

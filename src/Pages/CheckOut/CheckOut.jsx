@@ -30,7 +30,7 @@ const CheckOut = () => {
         message: textarea
     }
     console.log(order)
-    fetch("http://localhost:5000/checkout", {
+    fetch("https://car-doctor-server-tawny-seven.vercel.app/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

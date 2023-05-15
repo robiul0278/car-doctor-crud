@@ -9,6 +9,7 @@ const About = () => {
           <img src={parts} className="w-1/2 right-5 top-1/2 border-8 border-white absolute rounded-lg shadow-2xl" alt="" />
         </div>
         <div className="lg:w-1/2">
+          <h2 className="font-bold text-orange-600">About Us</h2>
           <h1 className="text-5xl font-bold">Box Office News!</h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
