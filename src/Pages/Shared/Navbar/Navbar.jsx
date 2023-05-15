@@ -5,9 +5,13 @@ import { useContext } from "react";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  console.log('navbar user ', user);
 
   const handleLogOut = () => {
     logOut()
+    .then(() => {
+      localStorage.removeItem("car-access-token");
+    })
       .catch((error) => {
         console.log(error);
       });

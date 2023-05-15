@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 
 const Register = () => {
@@ -71,6 +72,7 @@ const Register = () => {
         </div>
         <div className="py-3 text-center">
         <p>Already have an account?<Link className="font-bold text-orange-600" to="/login">Login</Link></p>
+        <SocialLogin></SocialLogin>
         </div>
       </form>
       </div>
